@@ -21,7 +21,7 @@ const ExpenseList = ({ expenses, onDelete }) => {
         {expenses.map((expense) => (
           <tr key={expense.id}>
             <td>{expense.description}</td>
-            <td>{expense.amount}</td>
+            <td>${expense.amount}</td>
             <td>{expense.category}</td>
             <td>
               <button
@@ -40,6 +40,7 @@ const ExpenseList = ({ expenses, onDelete }) => {
         <tr>
           <td>Total</td>
           <td>
+            $
             {expenses
               .map((expense) => expense.amount)
               .reduce((acc, expense) => acc + expense, 0)

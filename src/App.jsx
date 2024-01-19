@@ -5,12 +5,7 @@ import ExpenseAddForm from "./components/ExpenseAddForm";
 
 const App = () => {
   // ** <!----------------------------- States / Hooks --> **
-  const [expenses, setExpenses] = useState([
-    { id: 1, description: "rent", amount: 1000, category: "Rent" },
-    { id: 2, description: "groceries", amount: 500, category: "Groceries" },
-    { id: 3, description: "travel", amount: 200, category: "Entertainment" },
-    { id: 4, description: "rent", amount: 300, category: "Rent" },
-  ]);
+  const [expenses, setExpenses] = useState([]);
 
   const [selectedCategory, setSelectedCategory] = useState("");
 
